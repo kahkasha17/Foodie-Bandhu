@@ -1,0 +1,289 @@
+@charset "ISO-8859-1";
+
+html{
+  font-size: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+    text-decoration: none;
+}
+
+
+.navbar .container .navbar-collapse .navbar-nav li a{
+    color: white;
+    bottom: 0%;
+    position: relative;
+}
+.navbar .container .navbar-collapse .navbar-nav li a:hover{
+    color: gold;
+    bottom: 10%;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.bg-gold{
+    background: linear-gradient(90deg, rgb(255, 233, 106),rgb(255, 255, 101));
+}
+.text-gold{
+    color:  rgb(255, 217, 0);
+    /* background-color:white; */
+    
+}
+
+.h1:after{
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 2px;
+    background-color: black;
+    margin: auto;
+}
+
+.h2:after{
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 2px;
+    background-color: black;
+}
+
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+.orderbtn{
+    background-color: rgb(2, 91, 255);
+    border-radius:5px ;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+}
+.cartbtn{
+    border-radius:5px ;
+    border: 2px solid rgb(255, 208, 0);
+    background-color: white;
+    color: rgb(255,208, 0);
+    padding: 5px 10px;
+}
+
+.cartbtn:hover{
+    background-color:rgb(255, 208, 0);
+    color: black;
+}
+
+
+
+
+.food-logo{
+    width: 18rem;
+} 
+
+.booktable{
+    background: radial-gradient(rgb(86, 86, 94),rgb(66, 66, 73),rgb(24, 22, 22));
+    background-size: cover;
+}
+.booktableInput{
+    padding: 0px;
+    outline: none;
+    box-shadow: none;
+}
+
+.th1:after{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: rgb(255, 217, 0);
+    margin: auto;
+}
+.brown{
+    background-color: rgb(255, 217, 0);
+}
+.brown:hover{
+    background-color: rgb(255, 217, 0) !important;
+    color:white;
+}
+
+
+
+
+.footer{
+    background:#333;
+    
+    text-transform: capitalize;
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.footer .box-container .box{
+    /* margin:1.5rem; */
+    text-align: center;
+    /* flex:1 1 25rem; */
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    color:#fff;
+    /* padding-top: 1rem; */
+}
+
+.footer .box-container .box p{
+    font-size: 1.3rem;
+    color:#eee;
+    padding:.7rem 0;
+}
+
+.footer .box-container .box p i{
+    padding-right: .1rem;
+    color:#f39c12;
+}
+
+.footer .box-container .box a{
+    font-size: 1.4rem;
+    display: block;
+    text-decoration: none;
+    padding:.3rem 0;
+    color:#eee;
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .credit{
+    padding:1rem 1rem;
+    font-size: 1.2rem;
+    color:#fff;
+    background:#111;
+    text-align: center;
+    /* font-weight: normal; */
+    padding-bottom: 1rem;
+}
+
+.footer .credit a{
+    color:#f39c12
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* New code */
+
+    
+	.man-img{
+    	height: 2.8rem;
+    	width: auto;
+		}
+		
+#myul{
+    position: absolute; 
+    top:4.2rem;
+    font-size: 1rem; 
+    right: 8rem;
+}
+	
+
+@media (max-width:1200px) 
+{
+    html{
+         font-size: 112.5%
+    }
+    .btns{
+        flex-direction: column;
+    }
+    .cartbtn{
+        margin-bottom: 5px;
+    }
+    .modal .cardbtns{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:992px){
+    html{
+        font-size: 87.5%;
+        /* 14px */
+    }
+    .btns{
+        flex-direction: column;
+    }
+    .cartbtn{
+        margin-bottom: 5px;
+    }
+    #myul{
+        top:3.2rem;
+        right: 10rem;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 70%;
+    }
+     .cartbtn{
+        margin-bottom: 0px;
+    }
+    .btns{
+        flex-direction: row;
+    }
+    #myul{
+        top:3.2rem;
+        right: 9rem;
+    }
+}
+@media (max-width:576px){
+    html{
+        font-size: 75%;
+    }
+    .btns{
+        flex-direction: row;
+
+    }
+     #myul{
+    top:3.2rem;
+        right: 5rem;
+    }
+}
+
+@media (max-width:446px){
+    html{
+        font-size: 56.25%;
+    }
+    .btns{
+        flex-direction: row;
+
+    }
+    .modal .cardbtns{
+        flex-direction: column;
+    }
+    .head1{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+     
+   #myul{
+    	top:3.2rem;
+        right: 5rem;
+    
+	}
+}
+	
+    

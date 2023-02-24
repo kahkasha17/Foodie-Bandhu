@@ -1,0 +1,64 @@
+@charset "ISO-8859-1";
+        html {
+            font-size: 100%;
+            font-family: Cambria;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: Cambria;
+        }
+
+        .sp {
+            margin-top: -0.5rem;
+        }
+
+        .form-control {
+            border: 2px solid rgb(124, 40, 1);
+        }
+
+        h2:after {
+            content: "";
+            width: 8rem;
+            height: 0.1rem;
+            background: black;
+            display: block;
+            margin: auto;
+        }
+
+
+        @media (max-width:1140px) {
+            html {
+                font-size: 120%;
+            }
+        }
+
+        @media (max-width:992px) {
+            html {
+                font-size: 87.5%;
+            }
+        }
+
+        @media (max-width:768px) {
+            html {
+                font-size: 75%;
+            }
+        }
+
+        @media (max-width:576px) {
+            html {
+                font-size: 62.5%;
+            }
+            .container
+            {
+            height: 100%;
+            }
+        }
+
+        @media (max-width:442px) {
+            html {
+                font-size: 62.5%;
+            }
+            
+        }
+  

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:c="http://www.springframework.org/schema/c"
+ xmlns:util="http://www.springframework.org/schema/util"
+ xmlns:mvc="http://www.springframework.org/schema/mvc"
+ xmlns:tx="http://www.springframework.org/schema/tx"
+
+ xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd
+           http://www.springframework.org/schema/util 
+		   http://www.springframework.org/schema/util/spring-util.xsd
+		   http://www.springframework.org/schema/mvc 
+		   http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+           ">
+           
+           	<context:annotation-config/>
+           <mvc:annotation-driven />
+          <tx:annotation-driven/>
+           <mvc:resources mapping="/resource/**" location="/WEB-INF/resource/"
+   		   />
+           <context:component-scan base-package="com"/>
+            		   
+         <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" name="viewResolver" p:prefix="/WEB-INF/views/" p:suffix=".jsp"/>
+         
+         
+         
+         <!--Data Source  --> 
+ <bean name="ds"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"
+		 value="com.mysql.cj.jdbc.Driver" />
+		<property name="url" 
+		 value="jdbc:mysql://localhost:3306/Foodie_Bandhu" />
+		<property name="username"
+		 value="root" />
+		<property name="password"
+		 value="" />
+	</bean>
+	
+	<!--Session Factory  -->	
+	<bean id="sf"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		
+		<property name="dataSource" ref="ds" />
+		
+		<!--Hibernate Properties  -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+		<!--Annotated Class  -->
+		<property name="annotatedClasses">
+			<list>
+				<value>com.spring.Modal.User</value>
+				<value>com.spring.Modal.Login</value>
+				<value>com.spring.Modal.Contactus</value>
+				<value>com.spring.Modal.EmpRegis</value>
+				<value>com.spring.Modal.Admin</value>
+				<value>com.spring.Modal.HelpAndSupport</value>
+				<value>com.spring.Modal.AddMenuItem</value>
+				<value>com.spring.Modal.BookTable</value>
+				<value>com.spring.Modal.AddOrder</value>
+				<value>com.spring.Modal.Quantity</value>
+				<value>com.spring.Modal.Dish</value>
+			</list>
+		</property>
+	</bean>
+	
+	
+	<!--Hibernate Template  -->
+	<bean class="org.springframework.orm.hibernate5.HibernateTemplate"
+		id="hibernateTemplate">
+		<property name="sessionFactory" ref="sf" />
+	</bean>
+	
+	
+<!--Transaction Manager  -->
+	<bean name="transactionManager"
+		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sf" />
+	</bean>
+<!--Configure multipart resolver  -->
+<bean name="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+<property name="maxUploadSize" value="2097152 "/>
+</bean>
+ 
+ </beans>

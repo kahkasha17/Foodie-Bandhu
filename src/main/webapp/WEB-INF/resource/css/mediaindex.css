@@ -1,0 +1,154 @@
+@charset "ISO-8859-1";
+/* Media Queries */
+/* 150 */
+/* FOr Modal */
+@media (min-width: 576px){
+    .modal-dialog {
+      max-width: 400px;}
+      
+      .modal-content {
+        padding: 1rem;
+      }
+    
+  }
+  
+  .modal-header .close {
+     
+      margin-top: -1.5rem;
+    
+  }
+  
+  .form-title {
+    margin: -2rem 0rem 2rem;
+  }
+  
+  .btn-round {
+    border-radius: 3rem;
+  }
+  
+  .delimiter {
+    padding: 1rem;  
+  }
+  
+  .social-buttons  .btn  {
+       
+      margin: 0 0.5rem 1rem;
+     
+  }
+  
+  .signup-section {
+    padding: 0.3rem 0rem;
+  }
+
+
+
+
+
+/* For modal */
+
+@media only screen and (max-width: 992px) 
+{
+    .logo
+    {
+        width:30%;
+    }
+    a .bxs-user-circle
+    {
+        
+        
+        margin-left:70% ;
+        margin-top:-7% ;
+    }    
+    .icon
+    {
+        margin-left:108% ;
+        margin-top:-13% ;
+        font-size: medium;
+        
+    }
+    .menu .nimg
+    {
+        display: none;
+    }
+    .menu2
+    {
+        width: 100%;
+    }
+    .cimg
+    {
+        display: none;
+    }
+    .ctext
+    {
+        width: 100%;
+    }
+
+
+    
+    
+
+}
+/* 125 */
+@media only screen and (max-width: 1200px) 
+{
+    .love
+    {
+        width: 50%;
+        margin: auto;
+    }
+    .masale
+    {
+        display: none;;
+    }
+    
+}
+@media only screen and (max-width: 768px) 
+{
+    
+}
+@media only screen and (max-width: 600px)
+{
+    
+} 
+@media only screen and (max-width: 548px)
+{
+    .logo
+    {
+        margin-left: -20%;
+    }
+    a .bxs-user-circle
+
+    {
+        margin-top: -8.5%;   
+        margin-left:62% ;
+    }    
+    .icon
+    {
+        margin-left:100% ;
+    } 
+    .love
+    {
+        width: 80%;
+        
+    }
+    .catspoon
+    {
+        font-size: small;
+    }
+         
+} 
+@media only screen and (max-width: 448px)
+{
+    a .bxs-user-circle
+    {
+        margin-left:50% ;
+    }    
+    .icon
+    {
+        margin-left:100% ;  
+    }  
+    .catspoon 
+    {
+        font-size: 9px;
+    }
+} 

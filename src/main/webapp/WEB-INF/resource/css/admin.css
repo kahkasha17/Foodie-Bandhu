@@ -1,0 +1,261 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Dancing+Script:wght@700&display=swap');
+html{
+    font-size: 120%;
+    /* font-size: 100%; = 16px */
+    /*                    18px   */
+    /* 16px=100%
+    1px=100/16=6.25
+    18px=20*6.25=112.5% */
+    font-family: Alike;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: cambria;
+    font-family: Alike;
+}
+.fbname h5{
+    font-family: Dancing Script;
+    font-size: 2rem;
+}
+.fbname span{
+    font-family: Dancing Script;
+    font-size: 1.3rem;
+}
+.admin-img{
+    max-width: auto;
+    height: 2.3rem;
+}
+.food-logo{
+    max-width: 10rem;
+    max-height: auto;
+}
+
+.backimg{
+   background-color: white;
+   
+}
+
+#myul{
+    position: absolute; top:6.5%; font-size: 0.8rem;
+}
+.sidebar ul li{
+    
+    border-bottom:0.1rem solid white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.sidebar ul li a{
+    font-size: 1.05rem;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar ul li:hover{
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.sidebar ul li:hover a{
+    color: black;
+}
+
+.main-h1{
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+    border-bottom: 0.11rem solid white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    text-align: center;
+}
+.main-p{
+    text-align: center;
+}
+.boxshadow{
+    box-shadow: 0.09rem 0.08rem 0.006rem 0.06rem rgb(128, 124, 124);
+    background: red;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    
+    font-family: Alike;
+}
+
+#emp,#order,#customer,#menu,#help,#contact,#income,#feedback,#tables{
+    display: none;
+}
+
+.downline:after{
+    margin: 0.2rem auto;
+    content: "";
+    width: 12rem;
+    height: 0.13rem;
+    display: block;
+    background-color: black;
+}
+
+ .profile-div{
+     position: absolute;
+     top: 4%;
+     font-size: 0.8rem;
+ }
+
+
+.footer{
+      background:linear-gradient(90deg,#00265f, #3283a8 ,#00265f);
+    text-transform: capitalize;
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.footer .box-container .box{
+    /* margin:1.5rem; */
+    text-align: center;
+    /* flex:1 1 25rem; */
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    color:#fff;
+    /* padding-top: 1rem; */
+}
+
+.footer .box-container .box p{
+    font-size: 1.3rem;
+    color:#eee;
+    padding:.7rem 0;
+}
+
+.footer .box-container .box p i{
+    padding-right: .1rem;
+    color:#f39c12;
+}
+
+.footer .box-container .box a{
+    font-size: 1.4rem;
+    display: block;
+    text-decoration: none;
+    padding:.3rem 0;
+    color:#eee;
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.credit{
+    color: white;
+    text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.tableScroll {
+	height: 26rem;
+	overflow: auto;
+}
+
+@media ( max-width :992px) {
+	html {
+		font-size: 80%;
+	}
+}
+
+@media ( max-width :768px) {
+	html {
+		font-size: 75%;
+	}
+}
+
+@media ( max-width :576px) {
+	html {
+		font-size: 55%;
+	}
+	#myul {
+		top: 4.5%;
+	}
+	.tableScroll {
+		height: 33rem;
+		overflow: auto;
+	}
+}
+
+@media ( max-width :520px) {
+	html {
+		font-size: 49%;
+	}
+}
+
+@media ( max-width :435px) {
+	html {
+		font-size: 42%;
+	}
+	.tableScroll {
+		height: 33rem;
+		overflow: auto;
+	}
+}
+
+@media ( max-width : 455px) {
+	html {
+		font-size: 46%;
+	}
+	.tableScroll {
+		height: 33rem;
+		overflow: auto;
+	}
+	.admin-p {
+		font-size: 1.5rem;
+	}
+	.admin-img {
+		max-width: auto;
+		height: 3rem;
+	}
+	#myul {
+		top: 3.5%;
+	}
+	#myul li {
+		font-size: 1.2rem;
+	}
+	.fbname h5 {
+		font-size: 2.5rem;
+	}
+	.food-logo {
+		max-width: 12rem;
+		max-height: auto;
+	}
+	.sidebar ul li a {
+		font-size: 1.05rem;
+	}
+	.myh3 {
+		font-size: 1.8rem;
+		margin: 0.4rem;
+	}
+	.mymgrp {
+		font-size: 1.7rem;
+		margin: 0.4rem;
+	}
+	.boxshadow h2 {
+		font-size: 1.3rem;
+	}
+	.boxshadow p {
+		font-size: 1.3rem;
+	}
+	#myhomeli {
+		font-size: 1.4rem;
+	}
+	.footer {
+		font-size: 1.7rem;
+	}
+	#showImageInPop {
+		width: 50%;
+	}
+}
